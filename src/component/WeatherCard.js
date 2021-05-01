@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from '../utils/api';
+import Card from './Card';
 
 class WeatherCard extends React.Component
 {
@@ -16,7 +17,7 @@ class WeatherCard extends React.Component
         })
         .then(response => { 
                             this.setState({ weather: response.data })
-                            console.log(this.state.weather);
+                            console.log(this.state.weather.coord);
                         })
         .catch(err => console.log('Error: ' + err));
     }
@@ -40,8 +41,7 @@ class WeatherCard extends React.Component
     {
         return (
             <div>
-                Place: {this.state.weather.name}
-                Description: {this.state.weather.coord.lat}
+                <Card weather={this.state.weather} />
             </div>
         );
     }

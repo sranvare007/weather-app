@@ -6,3 +6,5 @@ export default axios.create({
         'Access-Control-Allow-Origin': '*'
     }
 });
+
+//https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5/weather?lat=
