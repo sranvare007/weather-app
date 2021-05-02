@@ -5,9 +5,9 @@ class Spinner extends React.Component
     render()
     {
         return (
-            <div class="ui segment" style={{ height: '100px', margin: '10px' }}>
-                <div class="ui active dimmer">
-                    <div class="ui text loader">Loading...</div>
+            <div className="ui segment" style={{ height: '100px', margin: '10px' }}>
+                <div className="ui active dimmer">
+                    <div className="ui text loader">Loading...</div>
                 </div>
                 <p></p>
             </div>
