@@ -19,7 +19,15 @@ class WeatherCard extends React.Component
         .then(response => { 
                             this.setState({ weather: response.data });
                         })
-        .catch(err => console.log('Error: ' + err));
+        // .catch(err => console.log('Error: ' + err));
+        .catch((error) => {
+            if(error) {
+                if(window.confirm("You will need to request for demo from api server! Continue?"))
+                {
+                    window.location.href = 'https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5';
+                }
+            }
+        });
     }
 
     componentDidMount()
