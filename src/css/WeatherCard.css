@@ -1,5 +1,6 @@
 .card-container
 {
+    min-width: 190px;
     width: 28%;
     height: 40%;
     margin: 100px auto 0px auto;

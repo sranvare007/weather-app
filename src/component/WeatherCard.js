@@ -25,6 +25,7 @@ class WeatherCard extends React.Component
                 if(window.confirm("You will need to request for demo from api server! Continue?"))
                 {
                     window.location.href = 'https://cors-anywhere.herokuapp.com/api.openweathermap.org/data/2.5';
+                    // axios.get('https://cors-anywhere.herokuapp.com/corsdemo?accessRequest=16788cc646418996485e100eef8da8cf271412c9005c58147927403509eb3cb9');
                 }
             }
         });
